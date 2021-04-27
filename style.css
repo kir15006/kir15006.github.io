@@ -1,0 +1,39 @@
+header {
+background-color: #6d9f71;
+border-radius: 10px;
+color: white;
+padding: 1em;
+}
+h1{
+    margin: 0;
+    font-size: 3em;
+    display: inline;
+    padding: 15px;
+}
+h2{
+    margin-bottom: 0;
+}
+body{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(253, 250, 250);
+}
+img{
+    width: 125px;
+    float: right;
+    display: inline;
+    box-shadow: rgb(63, 63, 63) 0px 0px 15px;
+}
+footer{
+    background-color: #6d9f71;
+    border-radius: 10px;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+main{
+    padding-left: 15px;
+}
+.updateLine{
+    color: yellow;
+}
