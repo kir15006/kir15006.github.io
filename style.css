@@ -9,9 +9,11 @@ h1{
     font-size: 3em;
     display: inline;
     padding: 15px;
+    font-family: 'Oswald', sans-serif;
 }
 h2{
     margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
 }
 body{
     width: 50%;
