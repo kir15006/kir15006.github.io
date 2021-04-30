@@ -1,7 +1,42 @@
-body{
-    background-color: yellow;
+header{
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    background-color: rgb(49, 75, 161);
+    color: white;
+    padding: 0.25em;
 }
 main{
     display: grid;
     grid-template-columns: 1fr;
+}
+section{
+    margin: 1em;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+}
+.principle{
+    font-family: 'Cabin', sans-serif;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(88, 105, 158);
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+}
+.company{
+    padding: 0.5em;
+    margin: 0;
+}
+.link{
+    font-size: 1.25em;
+    padding: 0.5em;
+}
+img{
+    max-width: 100%;
+    margin: 1em 0em 0em 0em;
+}
+.explanation{
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0;
 }
