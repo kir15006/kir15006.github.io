@@ -40,3 +40,13 @@ img{
     padding: 0.5em;
     margin: 0;
 }
+footer{
+    background-color: rgb(49, 75, 161);
+    border-radius: 10px;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
