@@ -1,0 +1,142 @@
+/* Small/Phone View */
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #E5E5E5;
+}
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+#navigation li:first-child {
+    display: block;
+}
+#navigation li {
+    display: none;
+}
+#navigation a{
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #242F40;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover {
+    color: white;
+    background-color: #242F40;
+}
+#navigation a.active {
+    background-color: rgba(0,0,0,.55);
+    color: #363636;
+}
+#navigation.responsive li {
+    display: block;
+}
+body{
+    font-family: 'Martel', serif;
+}
+main{
+    padding: 1em;
+}
+img{
+    max-width: 100%;
+}
+#color1{
+    background-color: white;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+#color_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+}
+#color_grid p{
+    padding: 1em;
+    text-align: center;
+}
+#color2{
+    background-color: #E5E5E5;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 20px;
+}
+#color3{
+    background-color: #363636;
+    border-radius: 20px;
+    color: #E5E5E5;
+}
+#color4{
+    background-color: #CCA43B;
+    border-radius: 20px;
+}
+#color5{
+    background-color: #242F40;
+    border-radius: 20px;
+    color: #E5E5E5;
+}
+h1, h2, h3{
+    border-radius: 5px;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+h1{
+    color: #E5E5E5;
+    background-color: #242F40;
+    padding: 0.5em;
+}
+h2{
+    background-color: #E5E5E5;
+    color: #363636;
+    padding: 0.25em;
+
+}
+h3{
+    background-color: #CCA43B;
+    color: #242F40;
+    padding: 0.25em;
+}
+li{
+    padding: 10px;
+}
+
+/* Medium width */
+@media only screen and (min-width: 34.5em) {
+    nav {
+        max-width: 100%;
+    }
+    #navigation {
+        grid-template-columns: repeat(4, auto);
+    }
+    #navigation li{
+        display: block; /* change state in small view*/
+    }
+    #navigation a {
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+    img{
+        width: 15em;
+    }
+}
+/* Large width */
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+    nav{
+        width: 800px;
+    }
+    main{
+        width: 50em;
+        margin: auto;
+    }
+
+}
