@@ -1,0 +1,135 @@
+/* Small/Phone View */
+#navigation img{
+    width: 60px;
+}
+#navigation span{
+    place-self: center;
+    color: #E5E5E5;
+}
+.ham{
+    font-size: 1.5em;
+    place-self: center;
+}
+nav {
+    margin: 0 auto;
+    background-color: #242F40;
+}
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+#navigation li {
+    display: none;
+}
+#navigation a{
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    text-decoration: none;
+    color: #E5E5E5;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover {
+    color: #242F40;
+    background-color: #E5E5E5;
+}
+#navigation a.active {
+    background-color: #E5E5E5;
+    color: #242F40;
+}
+#navigation.responsive li {
+    display: block;
+}
+#navigation li:first-child {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+}
+.large-view-header{
+    display: none;
+}
+footer{
+    background-color: #242F40;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: auto auto;
+    background-color: #242F40;
+    color: #E5E5E5;
+    justify-content: center;
+}
+.map img{
+    max-width: 100%;
+}
+/* Medium width */
+@media only screen and (min-width: 33.25em) {
+    header{
+        background-color: #242F40;
+        color: #E5E5E5;
+    }
+    .large-view-header{
+        width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+    .large-view-header span{
+        align-self: center;
+        font-size: 1.75em;
+    }
+    header img{
+        width: 100px;
+    }
+    nav {
+        max-width: 100%;
+        background-color: #E5E5E5;
+    }
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+        
+    }
+    #navigation li{
+        display: block; /* change state in small view*/
+    }
+    #navigation a {
+        text-align: center;
+        color: #242F40;
+    }
+    #navigation a:hover, #navigation a.active:hover {
+        color: #E5E5E5;
+        background-color: #242F40;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-info{
+        grid-column: 2/3;
+    }
+    .map{
+        grid-row: 1/2;
+        padding: 1em;
+    }
+    .map img{
+        max-height: 150px;
+    }
+}
+/* Large width */
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+    .footer-grid{
+        width: 800px;
+        margin: 0 auto;
+    }
+    main{
+        width: 800px;
+        margin: auto;
+    }
+}
