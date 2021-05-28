@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <link rel="shortcut icon" href="images/weather_favicon.ico" type="image/x-icon">
+    <script src="js/preston-6.js"></script>
+    <script src="js/windchill.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/preston-6.css">
+</head>
+
+<body>
+    <div class="option_banner">
+        <h3>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
+    </div>
+    <header>
+        <div class="large-view-header">
+            <img src="images/weather_logo.png" alt="weather logo">
+            <span><strong>East Idaho Forcast:</strong><br />Acurate and Up to Date</span>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><img src="images/weather_logo.png" alt="weather logo"><span><strong>East Idaho
+                            Forcast:</strong><br />Acurate and Up to Date</span><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+                <ul>
+                    <h3>Weather Summary</h3>
+                    <li>Currently: Sunny</li>
+                    <li>High: <span id="temp">54</span>° F</li>
+                    <li>Wind Chill: <span id="windChill"></span> °F</li>
+                    <li>Humidity: 69%</li>
+                    <li>Wind Speed: <span id="windSpeed">12</span>mph</li>
+                </ul>
+                <picture>
+                    <source media="(min-width:800px)" srcset="images/W06_hero_image_1000px.jpg">
+                    <source media="(min-width:500px)" srcset="images/W06_hero_image_800px.jpg">
+                    <img src="images/W06_hero_image_500px.jpg" alt="field with houses">
+                </picture>
+        </div>
+        <ul class="forcast">
+            <li>Monday <img src="images/sunny.png" alt="sun"> 89°</li>
+            <li>Tuesday <img src="images/sunny.png" alt="sun"> 87°</li>
+            <li>Wednesday <img src="images/sunny.png" alt="sun">78°</li>
+            <li>Thursday <img src="images/sunny.png" alt="sun">75°</li>
+            <li>Friday <img src="images/sunny.png" alt="sun"> 72°</li>
+        </ul>
+        <div class="article">
+            <h3>Article Title</h3>
+            <img src="images/man_and_mountains.jpg" alt="man with mountains">
+            <article>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur facilis voluptatum distinctio iure
+                recusandae totam repellendus vitae ab suscipit aperiam, ut autem quia minus reprehenderit sunt rem fugit
+                veritatis explicabo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nesciunt blanditiis
+                quas, illo totam facilis quidem illum, sed quos placeat pariatur sapiente sint unde accusantium! Magnam
+                saepe voluptatem excepturi aspernatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur facilis voluptatum distinctio iure
+                recusandae totam repellendus vitae ab suscipit aperiam, ut autem quia minus reprehenderit sunt rem fugit
+                veritatis explicabo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nesciunt blanditiis
+                quas, illo totam facilis quidem illum, sed quos placeat pariatur sapiente sint unde accusantium! Magnam
+                saepe voluptatem excepturi aspernatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur facilis voluptatum distinctio iure
+                recusandae totam repellendus vitae ab suscipit aperiam, ut autem quia minus reprehenderit sunt rem fugit
+                veritatis explicabo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nesciunt blanditiis
+                quas, illo totam facilis quidem illum, sed quos placeat pariatur sapiente sint unde accusantium! Magnam
+                saepe voluptatem excepturi aspernatur!
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Address: 123 Weather St. Preston ID 83263</p>
+                <p>Email: contact@eastidahoforecast.com</p>
+                <p>Phone: (208) 555- 4921</p>
+            </div>
+            <div class="map">
+                <img src="images/temp-weather-map.PNG" alt="map">
+                <p id="currentDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Noto Sans HK']
+  }
+});
+    </script>
+</body>
+
+</html>
