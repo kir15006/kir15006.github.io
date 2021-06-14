@@ -1,0 +1,53 @@
+form {
+    display: grid;
+}
+input, select, textarea{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #E5E5E5;
+}
+input:hover, select:hover, textarea:hover, button:hover{
+    box-shadow: 5px 5px 8px #858585;
+}
+
+input:active, input:focus, select:active, select:focus, textarea:active, textarea:focus{
+    background-color: #242F40;
+    color: white;
+    box-shadow: 5px 5px 8px #858585;
+    outline: none;
+}
+
+button {
+    max-width: 70px;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #CCA43B;
+}
+
+button:active, button:active {
+    background-color: #a78530;
+    box-shadow: none;
+}
+
+input[type=range]:hover, input[type=range]:focus, input[type=radio]:hover, input[type=radio]:focus{
+    box-shadow: none;
+}
+
+label{
+    color: #242F40;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    max-width: 50%;
+    margin: 200px auto;
+    background-color: #242F40;
+    padding: 2rem 0;
+    color: white;
+    border-radius: 30px;
+}
