@@ -1,0 +1,41 @@
+header {
+    color: #4D4D96;
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-gap: 0.25rem;
+    justify-items: center;
+    box-shadow: 5px 5px 5px 10px grey;
+    padding: 1rem;
+}
+.cards section{
+    background-color: #B9B9CC;
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+}
+.cards section img{
+    max-width: 200px;
+}
+.cards section h2{
+    color: #4D4D96;
+}
+
+@media only screen and (min-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1275px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
