@@ -21,6 +21,10 @@ header {
 .cards section h2{
     color: #4D4D96;
 }
+footer {
+    text-align: center;
+    margin: 2rem;
+}
 
 @media only screen and (min-width: 700px) {
     .cards {
