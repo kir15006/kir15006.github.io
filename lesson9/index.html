@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/lazyload.js" defer></script>
-    <script src="js/gallery-7.js"></script>
-    <link rel="stylesheet" href="css/gallery-7.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <title>Gallery</title>
+    <link rel="stylesheet" href="css/preston-6.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="js/town_info.js"></script>
+    <script src="js/preston-6.js"></script>
+    <title>Home Page</title>
 </head>
 <body>
     <header>
@@ -20,27 +21,17 @@
             <ul id="navigation">
                 <li><img src="images/weather_logo.png" alt="weather logo"><span><strong>East Idaho
                             Forcast:</strong><br />Acurate and Up to Date</span><a class="ham" href="#">&#9776;</a></li>
-                <li><a href="/lesson9/index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li class="active"><a href="/lesson6/preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-7.html">Gallery</a></li>
+                <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="image-grid">
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=1" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=2" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=3" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=4" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=5" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=6" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=7" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=8" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=9" alt=""><p>LOREM IPSUM</p></picture>
-        </div>
+        <div id="town_cards"></div>
     </main>
     <footer>
         <div class="footer-grid">
