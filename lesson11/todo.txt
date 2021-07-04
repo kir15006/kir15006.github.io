@@ -1,0 +1,5 @@
+separate preston.js from current date in footer
+
+rename preston.css and move code if necessary
+
+get active navigation class working

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <link rel="shortcut icon" href="images/weather_favicon.ico" type="image/x-icon">
+    <script src="js/preston.js"></script>
+    <script src="js/severity.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/preston.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="option_banner">
+        <h3>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
+    </div>
+    <header>
+        <div class="large-view-header">
+            <img src="images/weather_logo.png" alt="weather logo">
+            <span><strong>East Idaho Forcast:</strong><br />Accurate and Up to Date</span>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><img src="images/weather_logo.png" alt="weather logo"><span><strong>East Idaho
+                            Forcast:</strong><br />Accurate and Up to Date</span><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="thanks.html">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Smith" pattern="[a-zA-Z]{5,0}" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="john_smith@gmail.com">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="(555) 555-5555" required>
+            <label for="zip">Zip Code</label>
+            <input type="number" name="zip" id="zip" placeholder="12345" required>
+            <label for="storm_date">Storm Date</label>
+            <input type="date" name="storm_date" id="storm_date">
+            <label for="storm_type">Storm Type</label>
+            <input list="storm_types" name="storm_types" id="storm_type" placeholder="Storm Type">
+            <datalist id="storm_types">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+            <label for="storm_severity">Storm Severity: <span id="severity">5</span></label>
+            <input type="range" name="storm_severity" id="storm_severity" value="5" min="1" max="10" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+            <label for="region">Region</label>
+            <select name="region" id="region">
+                <option selected disabled>Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+            <label for="danger_level">Danger?</label>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="danger_level" value="yes">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="danger_level" value="no">
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="maybe" name="danger_level" value="maybe">
+            <label for="info">Additional Information</label>
+            <textarea name="info" id="info" cols="30" rows="10"></textarea>
+            <label for="submit"></label>
+            <button type="submit" name="submit" id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Address: 123 Weather St. Preston ID 83263</p>
+                <p>Email: contact@eastidahoforecast.com</p>
+                <p>Phone: (208) 555- 4921</p>
+            </div>
+            <div class="map">
+                <img src="images/temp-weather-map.PNG" alt="map">
+                <p id="currentDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Noto Sans HK']
+  }
+});
+    </script>
+</body>
+
+</html>
