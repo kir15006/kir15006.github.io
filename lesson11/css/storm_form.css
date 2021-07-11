@@ -1,3 +1,11 @@
+h2{
+    background-color: #242F40;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
 form {
     display: grid;
 }

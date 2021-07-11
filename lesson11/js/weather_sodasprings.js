@@ -1,5 +1,5 @@
 // current weather
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=89cee548a3df9c3f2b4ab9c1480baa99";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=89cee548a3df9c3f2b4ab9c1480baa99";
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -13,12 +13,11 @@ fetch(apiURL)
 
 
 // forcast 
-const forcastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=89cee548a3df9c3f2b4ab9c1480baa99";
+const forcastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=89cee548a3df9c3f2b4ab9c1480baa99";
 
 fetch(forcastApiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         let count = 0;
         var dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday', 'Sunday']
         jsObject.list.forEach(element => {
@@ -36,3 +35,21 @@ fetch(forcastApiURL)
             };
         });
     });
+
+// upcoming events
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    const events = jsonObject.towns[0].events;
+    var list = document.querySelector('#event_list');
+    for (let i = 0; i < events.length; i++ ) {
+        let event = document.createElement('li');
+        event.innerHTML = events[i];
+        list.appendChild(event);
+    }
+});

@@ -1,5 +1,3 @@
-separate preston.js from current date in footer
+optimize all images
 
-rename preston.css and move code if necessary
-
-get active navigation class working
+create content for town pages

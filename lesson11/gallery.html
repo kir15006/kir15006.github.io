@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/lazyload.js" defer></script>
-    <script src="js/gallery.js"></script>
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="shortcut icon" href="images/weather_favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/lazyload.js" defer></script>
+
     <title>Gallery</title>
 </head>
 <body>
@@ -20,26 +25,27 @@
             <ul id="navigation">
                 <li><img src="images/weather_logo.png" alt="weather logo"><span><strong>East Idaho
                             Forcast:</strong><br />Accurate and Up to Date</span><a class="ham" href="#">&#9776;</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li class="btn"><a href="index.html">Home</a></li>
+                <li class="btn"><a href="preston.html">Preston</a></li>
+                <li class="btn"><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="btn"><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="btn"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="btn"><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h2>Gallery</h2>
         <div class="image-grid">
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=1" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=2" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=3" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=4" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=5" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=6" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=7" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=8" alt=""><p>LOREM IPSUM</p></picture>
-            <picture><img src="images/placeholder.png" data-src="https://picsum.photos/300/400?random=9" alt=""><p>LOREM IPSUM</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/fall_colors.jpg" alt=""><p>Beautiful Fall Colors</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/wind_farm.jpg" alt=""><p>Powerfull Wind Farm</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/sand_dunes.jpg" alt=""><p>Sand Dunes</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/tetons.jpg" alt=""><p>The Grand Teton</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/river.jpg" alt=""><p>Flowing River</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/mountain_range.jpg" alt=""><p>Scenic Mountains</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/trail_to_lake.jpg" alt=""><p>Trail to a Lake</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/lake_at_sunset.jpg" alt=""><p>A Lake at Sunset</p></picture>
+            <picture><img src="images/placeholder.png" data-src="images/lazy_river.jpg" alt=""><p>Lazy Flowing River</p></picture>
         </div>
     </main>
     <footer>
@@ -56,5 +62,13 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Noto Sans HK']
+  }
+});
+    </script>
 </body>
 </html>
