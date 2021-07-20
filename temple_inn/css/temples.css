@@ -1,0 +1,58 @@
+#title{
+    text-align: center;
+    border-bottom: 5px solid #462749;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.card {
+    position: relative;
+    border: 5px solid black;
+    padding-bottom: 1rem;
+}
+
+.card h1{
+    position: absolute;
+    left: 20px;
+    box-shadow: 5px 5px 10px rgb(53, 53, 53);
+    background-color: rgba(255, 255, 255, 0.70);
+    padding: 0.5rem;
+}
+
+.card_image{
+    max-width: 100%;
+}
+
+.contact, .services, .history, .closures, .weather{
+    width: 80%;
+    margin: auto;
+}
+
+h3{
+    border-bottom: 5px solid #BBB6DF ;
+}
+
+.weather ul{
+    list-style: none;
+}
+
+/* Medium Width */
+@media only screen and (max-width: 1023px) {
+    .card h1{
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Small Width */
+@media only screen and (max-width: 600px) {
+    #cards{
+        grid-template-columns: 1fr;
+    }
+}

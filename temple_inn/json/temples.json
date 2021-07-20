@@ -1,0 +1,44 @@
+[
+    {
+        "name": "tucson",
+        "closures": 
+        [
+            "July 5th - July 19th",
+            "October 2nd",
+            "November 24th - November 25th",
+            "December 24th - December 25th",
+            "December 31st - January 1st"
+        ]
+    },
+    {
+        "name":"gila_valley",
+        "closures": 
+        [
+            "July 24th",
+            "September 27th - November 22nd",
+            "November 24th - November 25th",
+            "December 24th - December 25th",
+            "December 31st"
+        ]
+    },
+    {
+        "name": "snowflake",
+        "closures":
+        [
+            "September 13th - November 8th",
+            "November 25th - November 26th",
+            "December 24th - December 25th",
+            "January 1st"
+        ]
+    },
+    {
+        "name": "gilbert",
+        "closures":
+        [
+            "October 2nd",
+            "October 4th - November 25th",
+            "December 24th - December 25th",
+            "December 31st"
+        ]
+    }
+]

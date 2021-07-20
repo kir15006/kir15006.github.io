@@ -1,0 +1,217 @@
+#background{
+    background-image: url('/temple_inn/images/oakland_temple.jpg');
+    background-size: cover;
+    padding-top: 1rem;
+    max-width: 100%;
+}
+
+#background h1{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+    background-color: rgba(255, 255, 255, 0.85);
+    width: fit-content;
+    margin-left: 3rem;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+#personal_info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1 / span 2;
+}
+
+#stay_info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#locationList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#location_title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: fit-content;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+}
+
+.location{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.location input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;    
+}
+
+.radio_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+    background-color: rgba(255, 255, 255, 0.85);  
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.location:hover input ~ .radio_button{
+    background-color: rgba(211, 211, 211, 0.85);
+}
+
+.location input:checked ~ .radio_button {
+    background-color: #EC4E20;
+}
+
+.radio_button:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.location input:checked ~ .radio_button:after {
+    display: block;
+}
+
+.location .radio_button::after {
+    top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+label{
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: fit-content;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+}
+
+
+.location{
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px;
+}
+
+#city{
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], textarea{
+    padding: 0.5rem;
+    width: 80%;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+    background-color: rgba(255, 255, 255, 0.85);
+    outline: none;
+    transition: .3s;
+}
+
+input[type=radio] {
+    padding: 1rem;
+}
+
+input[type=date]{
+    border: none;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+    background-color: rgba(255, 255, 255, 0.85);
+    outline: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    transition: .3s;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus{
+    background-color: rgba(211, 211, 211, 0.85);
+    transition: .3s;
+}
+
+#dates{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input[type=number]{
+    width: 165px;
+}
+
+button{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+    background-color: rgba(177, 255, 181, 0.85);
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    transition: .3s;
+}
+#cancel{
+    background-color: rgba(255, 66, 66, 0.85);
+}
+
+button:hover{
+    background-color: rgba(101, 255, 108, 0.85);
+    transition: .3s;
+}
+
+#cancel:hover{
+    background-color: rgba(255, 17, 17, 0.85);
+    transition: .3s;
+}
+
+button:active{
+    background-color: rgba(177, 255, 181, 0.85);
+}
+
+#cancel:active{
+    background-color: rgba(255, 66, 66, 0.85);
+}
+
+textarea{
+    resize: vertical;
+}
+
+/* Medium Width */
+@media only screen and (max-width: 1023px) {
+    form{
+        grid-template-columns: 1fr;
+    }
+}
+/* Small Width */
+@media only screen and (max-width: 600px) {
+}

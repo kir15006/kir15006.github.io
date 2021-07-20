@@ -1,0 +1,84 @@
+#suite_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+h1, h2{
+    border-bottom: 5px solid #462749;
+}
+
+.room {
+    position: relative;
+}
+
+.room div{
+    position: absolute;
+    box-shadow: 5px 5px 10px rgb(53, 53, 53);
+    background-color: rgba(255, 255, 255, 0.70);
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    padding: 0.5rem;
+}
+
+.room img{
+    max-width: 100%;
+}
+
+form{
+    grid-column: span 2;
+    margin: auto;
+    width: 60%;
+    display: grid;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #D6D6D6;
+    transition: .3s;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus{
+    box-shadow: 5px 5px 8px #a8a8a8;
+    transition: .3s;
+}
+
+button{
+    width: 20%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #BBB6DF;
+    transition: .3s;
+}
+
+button:hover{
+    box-shadow: 5px 5px 8px #908cac;
+    transition: .3s;
+}
+
+button:active{
+    box-shadow: 0px 0px;
+}
+
+/* Small Width */
+@media only screen and (max-width: 600px) {
+    #suite_grid{
+        grid-template-columns: 1fr;
+    }
+
+    .room{
+        grid-column: 1;
+    }
+    form{
+        width: 90%;
+    }
+}

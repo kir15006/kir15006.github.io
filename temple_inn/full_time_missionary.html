@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/missionary.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
+    <script src="js/nav.js"></script>
+
+
+    <title>Full Time Temple Missionary</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <nav id="nav">
+                <ul>
+                    <a href="index.html"><img id="logo" src="images/temple_inn_logo.png" alt="temple_inn_logo"></a>
+                    <li class="ham">&#9776;</li>
+                    <li class="nav_item"><a href="index.html">Home</a></li>
+                    <li class="nav_item"><a href="temples.html">Temples</a></li>
+                    <li class="nav_item"><a href="reservations.html">Reservations</a></li>
+                    <li class="nav_item"><a id="services" href="services.html">Services</a><span id="servicesDropDown"> ▸</span></li>
+                    <div id="hidden_nav">
+                        <li class="nav_item"><a href="reception.html">Reception</a></li>
+                        <li class="nav_item"><a class="active" href="full_time_missionary.html">Temple Missionary</a></li>
+                    </div>
+                    <li class="nav_item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Suite Options</h1>
+            <div id="suite_grid">
+                <div class="room">
+                    <div>
+                    <h2>Long-Term Options</h2>
+                    <p>We offer rooms with a small kitchenette for full-time temple missionaries who might have a long stay</p>
+                    </div>
+                    <img src="images/kitchenette.jpg" alt="small kitchem">
+                </div>
+                <div class="room">
+                    <div>
+                        <h2>Standard Rooms</h2>
+                        <p>We offer spacious rooms with everything you need to have a comfortable stay with us.</p>
+                    </div>
+                    <img src="images/hotel_room.jpg" alt="Hotel Room">
+                </div>
+                <form>
+                    <h2>For more information send us a message</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>© 2021 | Kevin Kirby</p>
+            <ul id="footer_contact">
+                <strong>Contact info</strong>
+                <li>4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                <li>contact@templeinn.com</li>
+                <li>(240) 555-9876</li>
+            </ul>
+            <div id="footer_social">
+                <a href="https://www.instagram.com/"><img src="images/instagram logo.png" alt="instagram logo"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube logo.png" alt="youtube logo"></a>
+                <a href="https://twitter.com/"><img src="images/twitter logo.png" alt="twitter logo"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
